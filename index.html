@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script async defer src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script defer async>
+      window.googletag = window.googletag || { cmd: [] }
+      googletag.cmd.push(function () {
+        // Define a responsive ad slot.
+        // [START responsive_ad]
+        var responsiveAdSlot = googletag
+          .defineSlot(
+            '/6355419/Travel/Europe',
+            [
+              [300, 250],
+              [728, 90],
+              [750, 200]
+            ],
+            'responsive-ad'
+          )
+          .addService(googletag.pubads())
+
+        var mapping = googletag
+          .sizeMapping()
+          .addSize(
+            [1024, 768],
+            [
+              [750, 200],
+              [728, 90]
+            ]
+          )
+          .addSize([640, 480], [300, 250])
+          .addSize([0, 0], [])
+          .build()
+
+        responsiveAdSlot.defineSizeMapping(mapping)
+        // [END responsive_ad]
+
+        // Enable SRA and services.
+        googletag.pubads().enableSingleRequest()
+        googletag.enableServices()
+      })
+    </script>
+    <style>
+      .ad-container {
+        width: 100%; 
+        text-align: center;
+        margin-inline: auto;
+      }
+
+      .ad-slot {
+        display: inline-block;
+      }
+
+      .native-slot {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ad-container">
+      <div id="responsive-ad" class="ad-slot"></div>
+    </div>
+
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      googletag.cmd.push(function () {
+        googletag.display('responsive-ad')
+      })
+    </script>
+  </body>
+</html>
