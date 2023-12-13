@@ -47,7 +47,7 @@
           <figcaption class="flex justify-center items-center space-x-3">
             <img
               class="w-9 h-9 rounded-full object-cover"
-              src="./images/unoptimized/person-1.jpeg"
+              src="../../assets/images/unoptimized/person-1.jpeg"
               alt="profile picture"
             />
             <div class="space-y-0.5 font-medium dark:text-white text-left">
@@ -81,7 +81,7 @@
           <figcaption class="flex justify-center items-center space-x-3 ">
             <img
               class="w-9 h-9 rounded-full object-cover"
-              src="./images/unoptimized/person-2.jpeg"
+              src="../../assets/images/unoptimized/person-2.jpeg"
               alt="profile picture"
             />
             <div class="space-y-0.5 font-medium dark:text-white text-left">
@@ -120,7 +120,7 @@
           <figcaption class="flex justify-center items-center space-x-3">
             <img
               class="w-9 h-9 rounded-full object-cover"
-              src="./images/unoptimized/person-4.jpeg"
+              src="../../assets/images/unoptimized/person-4.jpeg"
               alt="profile picture"
             />
             <div class="space-y-0.5 font-medium dark:text-white text-left">
@@ -152,7 +152,7 @@
           <figcaption class="flex justify-center items-center space-x-3">
             <img
               class="w-9 h-9 rounded-full object-cover"
-              src="./images/unoptimized/person-5.jpeg"
+              src="../../assets/images/unoptimized/person-5.jpeg"
               alt="profile picture"
             />
             <div class="space-y-0.5 font-medium dark:text-white text-left">

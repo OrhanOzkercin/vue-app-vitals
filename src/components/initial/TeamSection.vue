@@ -14,7 +14,7 @@
         <div class="text-center text-gray-500 dark:text-gray-400">
           <img
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
-            src="./images/unoptimized/person-1.jpeg"
+            src="../../assets/images/unoptimized/person-1.jpeg"
             alt="Bonnie Avatar"
           />
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -72,7 +72,7 @@
         <div class="text-center text-gray-500 dark:text-gray-400">
           <img
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
-            src="./images/unoptimized/person-2.jpeg"
+            src="../../assets/images/unoptimized/person-2.jpeg"
             alt="Helene Avatar"
           />
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -130,7 +130,7 @@
         <div class="text-center text-gray-500 dark:text-gray-400">
           <img
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
-            src="./images/unoptimized/person-4.jpeg"
+            src="../../assets/images/unoptimized/person-4.jpeg"
             alt="Jese Avatar"
           />
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -188,7 +188,7 @@
         <div class="text-center text-gray-500 dark:text-gray-400">
           <img
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
-            src="./images/unoptimized/person-3.jpeg"
+            src="../../assets/images/unoptimized/person-3.jpeg"
             alt="Joseph Avatar"
           />
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -246,7 +246,7 @@
         <div class="text-center text-gray-500 dark:text-gray-400">
           <img
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
-            src="./images/unoptimized/person-5.jpeg"
+            src="../../assets/images/unoptimized/person-5.jpeg"
             alt="Sofia Avatar"
           />
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -304,7 +304,7 @@
         <div class="text-center text-gray-500 dark:text-gray-400">
           <img
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
-            src="./images/unoptimized/person-6.jpeg"
+            src="../../assets/images/unoptimized/person-6.jpeg"
             alt="Leslie Avatar"
           />
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -362,7 +362,7 @@
         <div class="text-center text-gray-500 dark:text-gray-400">
           <img
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
-            src="./images/unoptimized/person-7.jpeg"
+            src="../../assets/images/unoptimized/person-7.jpeg"
             alt="Michael Avatar"
           />
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -420,7 +420,7 @@
         <div class="text-center text-gray-500 dark:text-gray-400">
           <img
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
-            src="./images/unoptimized/person-8.jpeg"
+            src="../../assets/images/unoptimized/person-8.jpeg"
             alt="Neil Avatar"
           />
           <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
