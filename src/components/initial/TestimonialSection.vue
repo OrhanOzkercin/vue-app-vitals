@@ -1,9 +1,7 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <iframe
-      class="mx-auto"
-      width="1280"
-      height="720"
+      class="mx-auto sm:w-full max-w-7xl max-h-fit"
       src="https://www.youtube.com/embed/F0NYT7DIlDQ"
       title="Understanding performance with Core Web Vitals"
       frame-border="0"

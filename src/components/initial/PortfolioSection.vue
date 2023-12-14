@@ -10,7 +10,7 @@
       <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
         <div
           class="flex items-end overflow-hidden bg-cover rounded-lg h-96"
-          style="backgroun-image: `url('/images/unoptimized/cta-1.jpeg') `"
+          style="backgroun-image: `url('assets/images/unoptimized/cta-1.jpeg') `"
         >
           <div
             class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60"
@@ -26,7 +26,7 @@
 
         <div
           class="flex items-end overflow-hidden bg-cover rounded-lg h-96"
-          style="backgroun-image: `url('/images/unoptimized/cta-2.jpeg') `"
+          style="backgroun-image: `url('assets/images/unoptimized/cta-2.jpeg') `"
         >
           <div
             class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60"
@@ -42,7 +42,7 @@
 
         <div
           class="flex items-end overflow-hidden bg-cover rounded-lg h-96"
-          style="backgroun-image: `url('/images/unoptimized/cta-3.jpeg') `"
+          style="backgroun-image: `url('assets/images/unoptimized/cta-3.jpeg') `"
         >
           <div
             class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60"
