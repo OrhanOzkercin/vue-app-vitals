@@ -5,7 +5,7 @@ import { loadScript } from 'vue-plugin-load-script'
 onMounted(() => {
   setTimeout(() => {
     loadGoogleTags()
-  }, 1500)
+  }, 2500)
 })
 function loadGoogleTags() {
   loadScript('https://securepubads.g.doubleclick.net/tag/js/gpt.js')
