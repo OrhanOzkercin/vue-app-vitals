@@ -16,7 +16,7 @@ const heroImage = cld.image('hero').format('webp')
     rel="preload"
     fetchpriority="high"
     as="image"
-    href="https://res.cloudinary.com/dsganvb42/image/upload/f_webp/c_scale,w_1400/hero"
+    href="https://res.cloudinary.com/dsganvb42/image/upload/f_webp/c_scale,w_1400/hero?_a=BALFJtDLA"
     type="image/webp"
   />
   <section class="bg-white dark:bg-gray-900">
