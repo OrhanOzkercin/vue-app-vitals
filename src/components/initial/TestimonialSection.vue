@@ -2,6 +2,8 @@
   <section class="bg-white dark:bg-gray-900">
     <iframe
       class="mx-auto sm:w-full max-w-7xl max-h-fit"
+      width="1280"
+      height="720"
       src="https://www.youtube.com/embed/F0NYT7DIlDQ"
       title="Understanding performance with Core Web Vitals"
       frame-border="0"
@@ -76,7 +78,7 @@
               CSS is a huge timesaver!"
             </p>
           </blockquote>
-          <figcaption class="flex justify-center items-center space-x-3 ">
+          <figcaption class="flex justify-center items-center space-x-3">
             <img
               class="w-9 h-9 rounded-full object-cover"
               src="../../assets/images/unoptimized/person-2.jpeg"
@@ -155,9 +157,7 @@
             />
             <div class="space-y-0.5 font-medium dark:text-white text-left">
               <div>Joseph McFall</div>
-              <div class="text-sm font-light text-gray-500 dark:text-gray-400">
-                CTO at Google
-              </div>
+              <div class="text-sm font-light text-gray-500 dark:text-gray-400">CTO at Google</div>
             </div>
           </figcaption>
         </figure>
