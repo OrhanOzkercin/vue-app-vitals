@@ -28,20 +28,19 @@
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               Speechless with how easy this was to integrate
             </h3>
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
+
             <p class="my-4">
-              {/* eslint-disable-next-line react/no-unescaped-entities */}I recently got my hands on
-              Flowbite Pro, and holy crap, I'm speechless with how easy this was to integrate within
-              my application. Most templates are a pain, code is scattered, and near impossible to
-              theme.
+              I recently got my hands on Flowbite Pro, and holy crap, I'm speechless with how easy
+              this was to integrate within my application. Most templates are a pain, code is
+              scattered, and near impossible to theme.
             </p>
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
+
             <p class="my-4">
-              {/* eslint-disable-next-line react/no-unescaped-entities */} Flowbite has code in one
-              place and I'm not joking when I say it took me a matter of minutes to copy the code,
-              customise it and integrate within a Laravel + Vue application.
+              Flowbite has code in one place and I'm not joking when I say it took me a matter of
+              minutes to copy the code, customise it and integrate within a Laravel + Vue
+              application.
             </p>
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
+
             <p class="my-4">If you care for your time, I hands down would go with this."</p>
           </blockquote>
           <figcaption class="flex justify-center items-center space-x-3">
@@ -65,7 +64,7 @@
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               Solid foundation for any project
             </h3>
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
+
             <p class="my-4">
               FlowBite provides a robust set of design tokens and components based on the popular
               Tailwind CSS framework. From the most used UI components like forms and navigation
@@ -99,17 +98,15 @@
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               Mindblowing workflow and variants
             </h3>
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
+
             <p class="my-4">
-              {/* eslint-disable-next-line react/no-unescaped-entities */} "As someone who mainly
-              designs in the browser, I've been a casual user of Figma, but as soon as I saw and
-              started playing with FlowBite my mind was 🤯.
+              "As someone who mainly designs in the browser, I've been a casual user of Figma, but
+              as soon as I saw and started playing with FlowBite my mind was 🤯.
             </p>
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
+
             <p class="my-4">
-              {/* eslint-disable-next-line react/no-unescaped-entities */} Everything is so well
-              structured and simple to use (I've learnt so much about Figma by just using the
-              toolkit).
+              Everything is so well structured and simple to use (I've learnt so much about Figma by
+              just using the toolkit).
             </p>
             <p class="my-4">
               Aesthetically, the well designed components are beautiful and will {/*
@@ -138,11 +135,10 @@
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
               Efficient Collaborating
             </h3>
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
+
             <p class="my-4">
-              {/* eslint-disable-next-line react/no-unescaped-entities */} "This is a very complex
-              and beautiful set of elements. Under the hood it comes with the best things from 2
-              different worlds: Figma and Tailwind.
+              "This is a very complex and beautiful set of elements. Under the hood it comes with
+              the best things from 2 different worlds: Figma and Tailwind.
             </p>
             <p class="my-4">
               You have many examples that can be used to create a fast prototype for {/*
