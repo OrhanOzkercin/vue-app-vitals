@@ -146,6 +146,7 @@ const heroImage = cld.image('hero').format('webp')
 
       <div class="flex justify-center mt-10">
         <AdvancedImage
+          fetchpriority="high"
           class="object-cover rounded-xl h-96"
           :cldImg="heroImage"
           :plugins="plugins"
