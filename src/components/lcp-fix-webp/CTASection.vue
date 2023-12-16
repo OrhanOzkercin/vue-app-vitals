@@ -1,13 +1,21 @@
+<script setup>
+import { AdvancedImage } from '@cloudinary/vue'
+import { Cloudinary } from '@cloudinary/url-gen'
+const cld = new Cloudinary({
+  cloud: {
+    cloudName: 'dsganvb42'
+  }
+})
+const hero2Image = cld.image('hero-2').format('webp')
+const hero3Image = cld.image('hero-3').format('webp')
+</script>
+
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div class="container grid grid-cols-1 gap-8 px-4 py-12 mx-auto lg:grid-cols-2">
       <div class="flex flex-col items-center max-w-lg mx-auto text-center">
-        <img
-          loading="lazy"
-          class="rounded-3xl max-h-44 mb-8"
-          src="../../assets/images/unoptimized/hero-2.jpeg"
-          alt="web app"
-        />
+        <AdvancedImage class="rounded-3xl h-44 mb-8" :cldImg="hero2Image" />
+
         <h2 class="text-3xl font-semibold tracking-tight text-gray-800 dark:text-white">
           Web development
         </h2>
@@ -27,11 +35,7 @@
       </div>
 
       <div class="flex flex-col items-center max-w-lg mx-auto text-center">
-        <img
-          loading="lazy"
-          class="rounded-3xl max-h-44 mb-8"
-          src="../../assets/images/unoptimized/hero-3.jpeg"
-        />
+        <AdvancedImage class="rounded-3xl h-44 mb-8" :cldImg="hero3Image" />
         <h2 class="text-3xl font-semibold tracking-tight text-gray-800 dark:text-white">
           App development
         </h2>

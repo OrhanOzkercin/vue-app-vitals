@@ -1,3 +1,14 @@
+<script setup>
+import { AdvancedImage } from '@cloudinary/vue'
+import { Cloudinary } from '@cloudinary/url-gen'
+const cld = new Cloudinary({
+  cloud: {
+    cloudName: 'dsganvb42'
+  }
+})
+const heroImage = cld.image('hero').format('webp')
+</script>
+
 <template>
   <section class="bg-white dark:bg-gray-900">
     <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
@@ -132,11 +143,7 @@
       </div>
 
       <div class="flex justify-center mt-10">
-        <img
-          loading="lazy"
-          class="object-cover rounded-xl h-96"
-          src="../../assets/images/unoptimized/hero.jpeg"
-        />
+        <AdvancedImage class="object-cover rounded-xl h-96" :cldImg="heroImage" />
       </div>
     </div>
   </section>

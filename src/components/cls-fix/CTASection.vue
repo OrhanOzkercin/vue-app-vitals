@@ -3,6 +3,7 @@
     <div class="container grid grid-cols-1 gap-8 px-4 py-12 mx-auto lg:grid-cols-2">
       <div class="flex flex-col items-center max-w-lg mx-auto text-center">
         <img
+          loading="lazy"
           class="rounded-3xl h-44 mb-8"
           src="../../assets/images/unoptimized/hero-2.jpeg"
           alt="web app"
@@ -26,7 +27,11 @@
       </div>
 
       <div class="flex flex-col items-center max-w-lg mx-auto text-center">
-        <img class="rounded-3xl h-44 mb-8" src="../../assets/images/unoptimized/hero-3.jpeg" />
+        <img
+          loading="lazy"
+          class="rounded-3xl h-44 mb-8"
+          src="../../assets/images/unoptimized/hero-3.jpeg"
+        />
         <h2 class="text-3xl font-semibold tracking-tight text-gray-800 dark:text-white">
           App development
         </h2>
