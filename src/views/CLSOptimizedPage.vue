@@ -6,6 +6,8 @@ import HeaderSection from '../components/cls-fix/HeaderSection.vue'
 import PortfolioSection from '../components/initial/PortfolioSection.vue'
 import TeamSection from '../components/initial/TeamSection.vue'
 import TestimonialSection from '../components/initial/TestimonialSection.vue'
+import LoadScript from '../components/initial/LoadScript.vue'
+
 </script>
 
 <template>
@@ -19,4 +21,5 @@ import TestimonialSection from '../components/initial/TestimonialSection.vue'
   <TeamSection />
   <TestimonialSection />
   <FooterSection />
+  <LoadScript />
 </template>

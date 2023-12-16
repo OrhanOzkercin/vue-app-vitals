@@ -19,4 +19,5 @@ import TestimonialSection from '../components/lcp-fix-webp/TestimonialSection.vu
   <TeamSection />
   <TestimonialSection />
   <FooterSection />
+  <LoadScript />
 </template>

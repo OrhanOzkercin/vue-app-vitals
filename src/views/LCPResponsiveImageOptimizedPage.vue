@@ -6,6 +6,8 @@ import HeaderSection from '../components/lcp-fix-responsive-image/HeaderSection.
 import PortfolioSection from '../components/lcp-fix-responsive-image/PortfolioSection.vue'
 import TeamSection from '../components/lcp-fix-responsive-image/TeamSection.vue'
 import TestimonialSection from '../components/lcp-fix-responsive-image/TestimonialSection.vue'
+import LoadScript from '../components/initial/LoadScript.vue'
+
 </script>
 
 <template>
@@ -19,4 +21,5 @@ import TestimonialSection from '../components/lcp-fix-responsive-image/Testimoni
   <TeamSection />
   <TestimonialSection />
   <FooterSection />
+  <LoadScript />
 </template>

@@ -6,6 +6,8 @@ import HeaderSection from '../components/lcp-fix-lazy/HeaderSection.vue'
 import PortfolioSection from '../components/lcp-fix-lazy/PortfolioSection.vue'
 import TeamSection from '../components/lcp-fix-lazy/TeamSection.vue'
 import TestimonialSection from '../components/lcp-fix-lazy/TestimonialSection.vue'
+import LoadScript from '../components/initial/LoadScript.vue'
+
 </script>
 
 <template>
@@ -19,4 +21,5 @@ import TestimonialSection from '../components/lcp-fix-lazy/TestimonialSection.vu
   <TeamSection />
   <TestimonialSection />
   <FooterSection />
+  <LoadScript />
 </template>
