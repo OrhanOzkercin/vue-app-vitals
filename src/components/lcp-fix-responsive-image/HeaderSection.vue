@@ -1,11 +1,13 @@
 <script setup>
-import { AdvancedImage } from '@cloudinary/vue'
+import { AdvancedImage, responsive } from '@cloudinary/vue'
+
 import { Cloudinary } from '@cloudinary/url-gen'
 const cld = new Cloudinary({
   cloud: {
     cloudName: 'dsganvb42'
   }
 })
+const plugins = [responsive({ steps: [400, 767, 1000, 1400] })]
 const heroImage = cld.image('hero').format('webp')
 </script>
 
@@ -143,7 +145,12 @@ const heroImage = cld.image('hero').format('webp')
       </div>
 
       <div class="flex justify-center mt-10">
-        <AdvancedImage class="object-cover rounded-xl h-96" :cldImg="heroImage" />
+        <AdvancedImage
+          fetchpriority="high"
+          class="object-cover rounded-xl h-96"
+          :cldImg="heroImage"
+          :plugins="plugins"
+        />
       </div>
     </div>
   </section>

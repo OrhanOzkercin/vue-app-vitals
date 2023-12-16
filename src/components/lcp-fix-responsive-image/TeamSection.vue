@@ -1,11 +1,13 @@
 <script setup>
-import { AdvancedImage } from '@cloudinary/vue'
+import { AdvancedImage, responsive } from '@cloudinary/vue'
+
 import { Cloudinary } from '@cloudinary/url-gen'
 const cld = new Cloudinary({
   cloud: {
     cloudName: 'dsganvb42'
   }
 })
+const plugins = [responsive({ steps: [400, 767, 1000, 1400] })]
 const personImages = []
 for (let index = 0; index < 8; index++) {
   personImages.push(cld.image('person-' + (index + 1)).format('webp'))
@@ -27,6 +29,7 @@ for (let index = 0; index < 8; index++) {
       <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <div class="text-center text-gray-500 dark:text-gray-400">
           <AdvancedImage
+            :plugins="plugins"
             :cldImg="personImages[7]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
             alt="Bonnie Avatar"
@@ -85,6 +88,7 @@ for (let index = 0; index < 8; index++) {
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
           <AdvancedImage
+            :plugins="plugins"
             :cldImg="personImages[1]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
             alt="Helene Avatar"
@@ -143,6 +147,7 @@ for (let index = 0; index < 8; index++) {
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
           <AdvancedImage
+            :plugins="plugins"
             :cldImg="personImages[2]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
             alt="Jese Avatar"
@@ -201,6 +206,7 @@ for (let index = 0; index < 8; index++) {
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
           <AdvancedImage
+            :plugins="plugins"
             :cldImg="personImages[3]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
             alt="Joseph Avatar"
@@ -259,6 +265,7 @@ for (let index = 0; index < 8; index++) {
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
           <AdvancedImage
+            :plugins="plugins"
             :cldImg="personImages[4]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
             alt="Sofia Avatar"
@@ -317,6 +324,7 @@ for (let index = 0; index < 8; index++) {
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
           <AdvancedImage
+            :plugins="plugins"
             :cldImg="personImages[4]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
             alt="Leslie Avatar"
@@ -375,6 +383,7 @@ for (let index = 0; index < 8; index++) {
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
           <AdvancedImage
+            :plugins="plugins"
             :cldImg="personImages[5]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
             alt="Michael Avatar"
@@ -433,6 +442,7 @@ for (let index = 0; index < 8; index++) {
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
           <AdvancedImage
+            :plugins="plugins"
             :cldImg="personImages[6]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
             alt="Neil Avatar"

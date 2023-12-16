@@ -1,9 +1,7 @@
 <template>
   <section class="bg-white dark:bg-gray-900">
     <iframe
-      class="mx-auto sm:w-full max-w-7xl max-h-fit"
-      width="1280"
-      height="720"
+      class="mx-auto w-full h-80 max-w-7xl max-h-fit lg:w-[1280px] lg:h-[720px] px-2"
       src="https://www.youtube.com/embed/F0NYT7DIlDQ"
       title="Understanding performance with Core Web Vitals"
       frame-border="0"
@@ -72,9 +70,8 @@
               provides a solid foundation for any project.
             </p>
             <p class="my-4">
-              Designing with Figma components that can be easily translated to the {/*
-              eslint-disable-next-line react/no-unescaped-entities */} utility classes of Tailwind
-              CSS is a huge timesaver!"
+              Designing with Figma components that can be easily translated to the utility classes
+              of Tailwind CSS is a huge timesaver!"
             </p>
           </blockquote>
           <figcaption class="flex justify-center items-center space-x-3">
@@ -109,9 +106,8 @@
               just using the toolkit).
             </p>
             <p class="my-4">
-              Aesthetically, the well designed components are beautiful and will {/*
-              eslint-disable-next-line react/no-unescaped-entities */} undoubtedly level up your
-              next application."
+              Aesthetically, the well designed components are beautiful and will undoubtedly level
+              up your next application."
             </p>
           </blockquote>
           <figcaption class="flex justify-center items-center space-x-3">
@@ -141,8 +137,7 @@
               the best things from 2 different worlds: Figma and Tailwind.
             </p>
             <p class="my-4">
-              You have many examples that can be used to create a fast prototype for {/*
-              eslint-disable-next-line react/no-unescaped-entities */} your team."
+              You have many examples that can be used to create a fast prototype for your team."
             </p>
           </blockquote>
           <figcaption class="flex justify-center items-center space-x-3">

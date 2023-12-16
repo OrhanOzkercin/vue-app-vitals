@@ -1,11 +1,13 @@
 <script setup>
-import { AdvancedImage } from '@cloudinary/vue'
+import { AdvancedImage, responsive } from '@cloudinary/vue'
 import { Cloudinary } from '@cloudinary/url-gen'
 const cld = new Cloudinary({
   cloud: {
     cloudName: 'dsganvb42'
   }
 })
+const plugins = [responsive({ steps: [400, 767, 1000, 1400] })]
+
 const portfolioImages = []
 for (let index = 0; index < 4; index++) {
   portfolioImages.push(cld.image('cta-' + (index + 1)).format('webp'))
@@ -24,6 +26,7 @@ for (let index = 0; index < 4; index++) {
       <div class="cont grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
         <div class="relative flex items-end overflow-hidden bg-cover rounded-lg h-96">
           <AdvancedImage
+            :plugins="plugins"
             :cldImg="portfolioImages[0]"
             class="w-full h-full absolute object-cover"
             alt=""
@@ -42,6 +45,7 @@ for (let index = 0; index < 4; index++) {
 
         <div class="relative flex items-end overflow-hidden bg-cover rounded-lg h-96">
           <AdvancedImage
+            :plugins="plugins"
             :cldImg="portfolioImages[1]"
             class="w-full h-full absolute object-cover"
             alt=""
@@ -60,6 +64,7 @@ for (let index = 0; index < 4; index++) {
 
         <div class="relative flex items-end overflow-hidden bg-cover rounded-lg h-96">
           <AdvancedImage
+            :plugins="plugins"
             :cldImg="portfolioImages[2]"
             class="w-full h-full absolute object-cover"
             alt=""
@@ -78,6 +83,7 @@ for (let index = 0; index < 4; index++) {
 
         <div class="relative flex items-end overflow-hidden bg-cover rounded-lg h-96">
           <AdvancedImage
+            :plugins="plugins"
             :cldImg="portfolioImages[3]"
             class="w-full h-full absolute object-cover"
             alt=""

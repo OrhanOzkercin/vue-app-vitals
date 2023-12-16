@@ -1,23 +1,22 @@
 <script setup>
-import { AdvancedImage } from '@cloudinary/vue'
+import { AdvancedImage, responsive } from '@cloudinary/vue'
 import { Cloudinary } from '@cloudinary/url-gen'
 const cld = new Cloudinary({
   cloud: {
     cloudName: 'dsganvb42'
   }
 })
-const personImages = []
+const plugins = [responsive({ steps: [400, 767, 1000, 1400] })]
+const testimonialImages = []
 for (let index = 0; index < 4; index++) {
-  personImages.push(cld.image('person-' + (index + 1)).format('webp'))
+  testimonialImages.push(cld.image('person-' + (index + 1)).format('webp'))
 }
 </script>
 
 <template>
   <section class="bg-white dark:bg-gray-900">
     <iframe
-      class="mx-auto sm:w-full max-w-7xl max-h-fit"
-      width="1280"
-      height="720"
+      class="mx-auto w-full h-80 max-h-fit lg:w-[1280px] lg:h-[720px] px-2 max-w-full"
       src="https://www.youtube.com/embed/F0NYT7DIlDQ"
       title="Understanding performance with Core Web Vitals"
       frame-border="0"
@@ -59,7 +58,8 @@ for (let index = 0; index < 4; index++) {
           </blockquote>
           <figcaption class="flex justify-center items-center space-x-3">
             <AdvancedImage
-              :cldImg="personImages[0]"
+              :plugins="plugins"
+              :cldImg="testimonialImages[0]"
               class="w-9 h-9 rounded-full object-cover"
               alt="profile picture"
             />
@@ -86,14 +86,14 @@ for (let index = 0; index < 4; index++) {
               provides a solid foundation for any project.
             </p>
             <p class="my-4">
-              Designing with Figma components that can be easily translated to the {/*
-              eslint-disable-next-line react/no-unescaped-entities */} utility classes of Tailwind
-              CSS is a huge timesaver!"
+              Designing with Figma components that can be easily translated to the utility classes
+              of Tailwind CSS is a huge timesaver!"
             </p>
           </blockquote>
           <figcaption class="flex justify-center items-center space-x-3">
             <AdvancedImage
-              :cldImg="personImages[1]"
+              :plugins="plugins"
+              :cldImg="testimonialImages[1]"
               class="w-9 h-9 rounded-full object-cover"
               alt="profile picture"
             />
@@ -123,14 +123,14 @@ for (let index = 0; index < 4; index++) {
               just using the toolkit).
             </p>
             <p class="my-4">
-              Aesthetically, the well designed components are beautiful and will {/*
-              eslint-disable-next-line react/no-unescaped-entities */} undoubtedly level up your
-              next application."
+              Aesthetically, the well designed components are beautiful and will undoubtedly level
+              up your next application."
             </p>
           </blockquote>
           <figcaption class="flex justify-center items-center space-x-3">
             <AdvancedImage
-              :cldImg="personImages[2]"
+              :plugins="plugins"
+              :cldImg="testimonialImages[2]"
               class="w-9 h-9 rounded-full object-cover"
               alt="profile picture"
             />
@@ -155,13 +155,13 @@ for (let index = 0; index < 4; index++) {
               the best things from 2 different worlds: Figma and Tailwind.
             </p>
             <p class="my-4">
-              You have many examples that can be used to create a fast prototype for {/*
-              eslint-disable-next-line react/no-unescaped-entities */} your team."
+              You have many examples that can be used to create a fast prototype for your team."
             </p>
           </blockquote>
           <figcaption class="flex justify-center items-center space-x-3">
             <AdvancedImage
-              :cldImg="personImages[3]"
+              :plugins="plugins"
+              :cldImg="testimonialImages[3]"
               class="w-9 h-9 rounded-full object-cover"
               alt="profile picture"
             />

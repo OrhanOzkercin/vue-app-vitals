@@ -1,11 +1,15 @@
 <script setup>
-import { AdvancedImage } from '@cloudinary/vue'
+import { AdvancedImage, responsive } from '@cloudinary/vue'
+
 import { Cloudinary } from '@cloudinary/url-gen'
 const cld = new Cloudinary({
   cloud: {
     cloudName: 'dsganvb42'
   }
 })
+
+const plugins = [responsive({ steps: [400, 767, 1000, 1400] })]
+
 const hero2Image = cld.image('hero-2').format('webp')
 const hero3Image = cld.image('hero-3').format('webp')
 </script>
@@ -14,7 +18,7 @@ const hero3Image = cld.image('hero-3').format('webp')
   <section class="bg-white dark:bg-gray-900">
     <div class="container grid grid-cols-1 gap-8 px-4 py-12 mx-auto lg:grid-cols-2">
       <div class="flex flex-col items-center max-w-lg mx-auto text-center">
-        <AdvancedImage class="rounded-3xl h-44 mb-8" :cldImg="hero2Image" />
+        <AdvancedImage class="rounded-3xl h-44 mb-8" :cldImg="hero2Image" :plugins="plugins" />
 
         <h2 class="text-3xl font-semibold tracking-tight text-gray-800 dark:text-white">
           Web development
@@ -35,7 +39,7 @@ const hero3Image = cld.image('hero-3').format('webp')
       </div>
 
       <div class="flex flex-col items-center max-w-lg mx-auto text-center">
-        <AdvancedImage class="rounded-3xl h-44 mb-8" :cldImg="hero3Image" />
+        <AdvancedImage class="rounded-3xl h-44 mb-8" :cldImg="hero3Image" :plugins="plugins" />
         <h2 class="text-3xl font-semibold tracking-tight text-gray-800 dark:text-white">
           App development
         </h2>
