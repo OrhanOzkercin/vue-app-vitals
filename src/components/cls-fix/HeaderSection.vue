@@ -134,7 +134,7 @@
       <div class="flex justify-center mt-10">
         <img
           loading="lazy"
-          class="object-cover rounded-xl h-96"
+          class="object-cover rounded-xl h-48 sm:h-96"
           src="../../assets/images/unoptimized/hero.jpeg"
         />
       </div>

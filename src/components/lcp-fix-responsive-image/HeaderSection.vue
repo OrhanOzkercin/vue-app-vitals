@@ -144,9 +144,9 @@ const heroImage = cld.image('hero').format('webp')
         <p class="mt-3 text-sm text-gray-400">No credit card required</p>
       </div>
 
-      <div class="flex justify-center mt-10 h-96">
+      <div class="flex justify-center mt-10">
         <AdvancedImage
-          class="object-cover rounded-xl h-fit"
+          class="object-cover rounded-xl h-48 sm:h-96"
           :cldImg="heroImage"
           :plugins="plugins"
         />
