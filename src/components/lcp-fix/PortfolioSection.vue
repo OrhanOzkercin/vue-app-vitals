@@ -1,3 +1,17 @@
+<script setup>
+import { AdvancedImage } from '@cloudinary/vue'
+import { Cloudinary } from '@cloudinary/url-gen'
+const cld = new Cloudinary({
+  cloud: {
+    cloudName: 'dsganvb42'
+  }
+})
+const portfolioImages = []
+for (let index = 0; index < 4; index++) {
+  portfolioImages.push(cld.image('cta-' + (index + 1)).format('webp'))
+}
+</script>
+
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div class="container px-6 py-10 mx-auto">
@@ -9,9 +23,9 @@
 
       <div class="cont grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
         <div class="relative flex items-end overflow-hidden bg-cover rounded-lg h-96">
-          <img
+          <AdvancedImage
+            :cldImg="portfolioImages[0]"
             class="w-full h-full absolute object-cover"
-            src="../../assets/images/unoptimized/cta-1.jpeg"
             alt=""
           />
           <div
@@ -27,9 +41,9 @@
         </div>
 
         <div class="relative flex items-end overflow-hidden bg-cover rounded-lg h-96">
-          <img
+          <AdvancedImage
+            :cldImg="portfolioImages[1]"
             class="w-full h-full absolute object-cover"
-            src="../../assets/images/unoptimized/cta-2.jpeg"
             alt=""
           />
           <div
@@ -45,9 +59,9 @@
         </div>
 
         <div class="relative flex items-end overflow-hidden bg-cover rounded-lg h-96">
-          <img
+          <AdvancedImage
+            :cldImg="portfolioImages[2]"
             class="w-full h-full absolute object-cover"
-            src="../../assets/images/unoptimized/cta-3.jpeg"
             alt=""
           />
           <div
@@ -63,9 +77,9 @@
         </div>
 
         <div class="relative flex items-end overflow-hidden bg-cover rounded-lg h-96">
-          <img
+          <AdvancedImage
+            :cldImg="portfolioImages[3]"
             class="w-full h-full absolute object-cover"
-            src="../../assets/images/unoptimized/cta-4.jpeg"
             alt=""
           />
           <div

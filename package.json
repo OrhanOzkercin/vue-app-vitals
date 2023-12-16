@@ -11,6 +11,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@cloudinary/url-gen": "^1.14.0",
+    "@cloudinary/vue": "^1.11.2",
     "vue": "^3.3.10",
     "vue-router": "^4.2.5"
   },
