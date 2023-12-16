@@ -1,13 +1,13 @@
 <script setup>
 import { AdvancedImage, responsive, lazyload } from '@cloudinary/vue'
 import { Cloudinary } from '@cloudinary/url-gen'
-import { onMounted } from 'vue'
+
 const cld = new Cloudinary({
   cloud: {
     cloudName: 'dsganvb42'
   }
 })
-const plugins = [lazyload(), responsive({ steps: [400, 767, 1000, 1400] })]
+const plugins = [lazyload(), responsive({ steps: [400, 600,800] })]
 
 const testimonialImages = []
 for (let index = 0; index < 4; index++) {
