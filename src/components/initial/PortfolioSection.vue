@@ -7,11 +7,8 @@
         Our Portfolio
       </h1>
 
-      <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
-        <div
-          class="flex items-end overflow-hidden bg-cover rounded-lg h-96"
-          style="background-image: url('../../assets/images/unoptimized/cta-1.jpeg')"
-        >
+      <div class="cont grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
+        <div class="cta1 flex items-end overflow-hidden bg-cover rounded-lg h-96">
           <div
             class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60"
           >
@@ -24,10 +21,7 @@
           </div>
         </div>
 
-        <div
-          class="flex items-end overflow-hidden bg-cover rounded-lg h-96"
-          style="background-image: url('../../assets/images/unoptimized/cta-2.jpeg')"
-        >
+        <div class="cta2 flex items-end overflow-hidden bg-cover rounded-lg h-96">
           <div
             class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60"
           >
@@ -40,10 +34,7 @@
           </div>
         </div>
 
-        <div
-          class="flex items-end overflow-hidden bg-cover rounded-lg h-96"
-          style="background-image: url('../../assets/images/unoptimized/cta-3.jpeg')"
-        >
+        <div class="cta3 flex items-end overflow-hidden bg-cover rounded-lg h-96">
           <div
             class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60"
           >
@@ -56,10 +47,7 @@
           </div>
         </div>
 
-        <div
-          class="flex items-end overflow-hidden bg-cover rounded-lg h-96"
-          style="background-image: url('../../assets/images/unoptimized/cta-4.jpeg')"
-        >
+        <div class="cta4 flex items-end overflow-hidden bg-cover rounded-lg h-96">
           <div
             class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60"
           >
@@ -75,3 +63,24 @@
     </div>
   </section>
 </template>
+
+<style>
+.cont {
+  .cta4 {
+    background-image: url('../../assets/images/unoptimized/cta-2.jpeg');
+    background-color: rgb(255 255 255 / 0.6);
+  }
+  .cta2 {
+    background-image: url('../../assets/images/unoptimized/cta-3.jpeg');
+    background-color: rgb(255 255 255 / 0.6);
+  }
+  .cta3 {
+    background-image: url('../../assets/images/unoptimized/cta-4.jpeg');
+    background-color: rgb(255 255 255 / 0.6);
+  }
+  .cta1 {
+    background-image: url('../../assets/images/unoptimized/cta-1.jpeg');
+    background-color: rgb(255 255 255 / 0.6);
+  }
+}
+</style>
