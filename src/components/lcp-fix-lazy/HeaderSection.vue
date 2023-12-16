@@ -12,6 +12,13 @@ const heroImage = cld.image('hero').format('webp')
 </script>
 
 <template>
+  <link
+    rel="preload"
+    fetchpriority="high"
+    as="image"
+    href="https://res.cloudinary.com/dsganvb42/image/upload/f_webp/c_scale,w_1400/hero"
+    type="image/webp"
+  />
   <section class="bg-white dark:bg-gray-900">
     <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
