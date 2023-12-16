@@ -1,6 +1,7 @@
 <script setup>
 import { AdvancedImage, responsive, lazyload } from '@cloudinary/vue'
 import { Cloudinary } from '@cloudinary/url-gen'
+import { onMounted } from 'vue'
 const cld = new Cloudinary({
   cloud: {
     cloudName: 'dsganvb42'
@@ -17,9 +18,44 @@ for (let index = 0; index < 4; index++) {
 <template>
   <section class="bg-white dark:bg-gray-900">
     <iframe
-      class="mx-auto w-full h-80 max-h-fit lg:w-[1280px] lg:h-[720px] px-2 max-w-full"
+      class="mx-auto w-full h-80 max-h-fit lg:w-[1280px] lg:h-[730px]  px-2 max-w-full"
       src="https://www.youtube.com/embed/F0NYT7DIlDQ"
-      srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/F0NYT7DIlDQ><img src=https://i.ytimg.com/vi_webp/F0NYT7DIlDQ/maxresdefault.webp alt='Understanding performance with Core Web Vitals'><span>▶</span></a>"
+      srcdoc='<style>
+      .relative {
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+      }
+      .relative::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+      .relative {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      }
+      .yt-btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 68px;
+        height: 48px;
+        margin-left: -34px;
+        margin-top: -24px;
+        -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+        transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+        z-index: 63;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        color: inherit;
+        text-align: inherit;
+        font-size: 100%;
+        font-family: inherit;
+        cursor: default;
+        line-height: inherit;
+        overflow: hidden;
+      }
+    </style><a href=https://www.youtube.com/embed/F0NYT7DIlDQ><img class="relative" src=https://i.ytimg.com/vi_webp/F0NYT7DIlDQ/maxresdefault.webp alt="Understanding performance with Core Web Vitals"><button class="yt-btn"><svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%"><path class="ytp-large-play-button-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path><path d="M 45,24 27,14 27,34" fill="#fff"></path></svg></button></a>'
       frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
@@ -185,3 +221,27 @@ for (let index = 0; index < 4; index++) {
     </div>
   </section>
 </template>
+
+<style>
+.yt-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 68px;
+  height: 48px;
+  margin-left: -34px;
+  margin-top: -24px;
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  z-index: 63;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+  text-align: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  cursor: default;
+  line-height: inherit;
+}
+</style>
