@@ -2,10 +2,26 @@
 import { onMounted } from 'vue'
 import { loadScript } from 'vue-plugin-load-script'
 
+const props = defineProps(['refValue'])
+
 onMounted(() => {
-  setTimeout(() => {
+  console.log('props:', props.refValue)
+  const observer = new window.IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // If the target element is in the viewport, load the iframe
+        observer.disconnect()
+        loadScript()
+      }
+    })
+  })
+
+  // Start observing the element
+  observer.observe(props.refValue)
+
+  function loadScript() {
     loadGoogleTags()
-  }, 2500)
+  }
 })
 function loadGoogleTags() {
   loadScript('https://securepubads.g.doubleclick.net/tag/js/gpt.js')

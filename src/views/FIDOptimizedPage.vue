@@ -8,6 +8,9 @@ import FooterSection from '../components/initial/FooterSection.vue'
 import HeaderSection from '../components/lcp-fix-lazy/HeaderSection.vue'
 import PortfolioSection from '../components/lcp-fix-lazy/PortfolioSection.vue'
 import TeamSection from '../components/lcp-fix-lazy/TeamSection.vue'
+import { ref } from 'vue'
+
+const adRef = ref(null)
 </script>
 
 <template>
@@ -15,7 +18,7 @@ import TeamSection from '../components/lcp-fix-lazy/TeamSection.vue'
   <CTASection />
   <FeaturesSection />
   <PortfolioSection />
-  <div class="ad-container mb-10">
+  <div ref="adRef" class="ad-container mb-10">
     <div id="responsive-ad" class="ad-slot"></div>
   </div>
   <hr class="mb-10" />
@@ -23,5 +26,5 @@ import TeamSection from '../components/lcp-fix-lazy/TeamSection.vue'
   <TeamSection />
   <TestimonialSection />
   <FooterSection />
-  <LoadScript />
+  <LoadScript v-if="adRef" :refValue="adRef" />
 </template>
