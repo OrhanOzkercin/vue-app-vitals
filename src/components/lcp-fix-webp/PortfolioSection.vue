@@ -8,7 +8,7 @@ const cld = new Cloudinary({
 })
 const portfolioImages = []
 for (let index = 0; index < 4; index++) {
-  portfolioImages.push(cld.image('cta-' + (index + 1)).format('webp'))
+  portfolioImages.push(cld.image('cta-' + (index + 1)).format('webp')) // Change LCP Webp: Update portfolio images to webp
 }
 </script>
 
@@ -23,6 +23,7 @@ for (let index = 0; index < 4; index++) {
 
       <div class="cont grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
         <div class="relative flex items-end overflow-hidden bg-cover rounded-lg h-96">
+          <!-- Change LCP Webp: Update image -->
           <AdvancedImage
             :cldImg="portfolioImages[0]"
             class="w-full h-full absolute object-cover"
@@ -41,6 +42,7 @@ for (let index = 0; index < 4; index++) {
         </div>
 
         <div class="relative flex items-end overflow-hidden bg-cover rounded-lg h-96">
+          <!-- Change LCP Webp: Update image -->
           <AdvancedImage
             :cldImg="portfolioImages[1]"
             class="w-full h-full absolute object-cover"
@@ -59,6 +61,7 @@ for (let index = 0; index < 4; index++) {
         </div>
 
         <div class="relative flex items-end overflow-hidden bg-cover rounded-lg h-96">
+          <!-- Change LCP Webp: Update image -->
           <AdvancedImage
             :cldImg="portfolioImages[2]"
             class="w-full h-full absolute object-cover"
@@ -77,6 +80,7 @@ for (let index = 0; index < 4; index++) {
         </div>
 
         <div class="relative flex items-end overflow-hidden bg-cover rounded-lg h-96">
+          <!-- Change LCP Webp: Update image -->
           <AdvancedImage
             :cldImg="portfolioImages[3]"
             class="w-full h-full absolute object-cover"

@@ -6,14 +6,15 @@ const cld = new Cloudinary({
     cloudName: 'dsganvb42'
   }
 })
-const hero2Image = cld.image('hero-2').format('webp')
-const hero3Image = cld.image('hero-3').format('webp')
+const hero2Image = cld.image('hero-2').format('webp') // Change LCP Webp: Update hero CTA image to webp
+const hero3Image = cld.image('hero-3').format('webp') // Change LCP Webp: Update hero CTA image to webp
 </script>
 
 <template>
   <section class="bg-white dark:bg-gray-900">
     <div class="container grid grid-cols-1 gap-8 px-4 py-12 mx-auto lg:grid-cols-2">
       <div class="flex flex-col items-center max-w-lg mx-auto text-center">
+        <!-- Change LCP Webp: Update hero CTA image to webp -->
         <AdvancedImage class="rounded-3xl h-44 mb-8" :cldImg="hero2Image" />
 
         <h2 class="text-3xl font-semibold tracking-tight text-gray-800 dark:text-white">
@@ -35,6 +36,7 @@ const hero3Image = cld.image('hero-3').format('webp')
       </div>
 
       <div class="flex flex-col items-center max-w-lg mx-auto text-center">
+        <!-- Change LCP Webp: Update hero CTA image to webp -->
         <AdvancedImage class="rounded-3xl h-44 mb-8" :cldImg="hero3Image" />
         <h2 class="text-3xl font-semibold tracking-tight text-gray-800 dark:text-white">
           App development

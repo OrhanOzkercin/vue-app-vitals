@@ -6,7 +6,7 @@ const cld = new Cloudinary({
     cloudName: 'dsganvb42'
   }
 })
-const heroImage = cld.image('hero').format('webp')
+const heroImage = cld.image('hero').format('webp') // Change LCP Webp: Update hero image to webp
 </script>
 
 <template>
@@ -143,6 +143,7 @@ const heroImage = cld.image('hero').format('webp')
       </div>
 
       <div class="flex justify-center mt-10">
+        <!-- Change LCP Webp: Update hero image to webp -->
         <AdvancedImage class="object-cover rounded-xl h-48 sm:h-96" :cldImg="heroImage" />
       </div>
     </div>

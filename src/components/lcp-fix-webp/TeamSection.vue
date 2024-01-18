@@ -8,7 +8,7 @@ const cld = new Cloudinary({
 })
 const personImages = []
 for (let index = 0; index < 8; index++) {
-  personImages.push(cld.image('person-' + (index + 1)).format('webp'))
+  personImages.push(cld.image('person-' + (index + 1)).format('webp')) // Change LCP Webp: Update person images to webp
 }
 </script>
 
@@ -26,6 +26,7 @@ for (let index = 0; index < 8; index++) {
       </div>
       <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <div class="text-center text-gray-500 dark:text-gray-400">
+          <!-- Change LCP Webp: Update image -->
           <AdvancedImage
             :cldImg="personImages[7]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
@@ -84,6 +85,7 @@ for (let index = 0; index < 8; index++) {
           </ul>
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
+          <!-- Change LCP Webp: Update image -->
           <AdvancedImage
             :cldImg="personImages[1]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
@@ -142,6 +144,7 @@ for (let index = 0; index < 8; index++) {
           </ul>
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
+          <!-- Change LCP Webp: Update image -->
           <AdvancedImage
             :cldImg="personImages[2]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
@@ -200,6 +203,7 @@ for (let index = 0; index < 8; index++) {
           </ul>
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
+          <!-- Change LCP Webp: Update image -->
           <AdvancedImage
             :cldImg="personImages[3]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
@@ -258,6 +262,7 @@ for (let index = 0; index < 8; index++) {
           </ul>
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
+          <!-- Change LCP Webp: Update image -->
           <AdvancedImage
             :cldImg="personImages[0]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
@@ -316,6 +321,7 @@ for (let index = 0; index < 8; index++) {
           </ul>
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
+          <!-- Change LCP Webp: Update image -->
           <AdvancedImage
             :cldImg="personImages[4]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
@@ -374,6 +380,7 @@ for (let index = 0; index < 8; index++) {
           </ul>
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
+          <!-- Change LCP Webp: Update image -->
           <AdvancedImage
             :cldImg="personImages[5]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"
@@ -432,6 +439,7 @@ for (let index = 0; index < 8; index++) {
           </ul>
         </div>
         <div class="text-center text-gray-500 dark:text-gray-400">
+          <!-- Change LCP Webp: Update image -->
           <AdvancedImage
             :cldImg="personImages[6]"
             class="mx-auto mb-4 w-36 h-36 rounded-full object-cover"

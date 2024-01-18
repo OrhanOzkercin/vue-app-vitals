@@ -8,7 +8,7 @@ const cld = new Cloudinary({
 })
 const personImages = []
 for (let index = 0; index < 4; index++) {
-  personImages.push(cld.image('person-' + (index + 1)).format('webp'))
+  personImages.push(cld.image('person-' + (index + 1)).format('webp')) // Change LCP Webp: Update person images to webp
 }
 </script>
 
@@ -56,6 +56,7 @@ for (let index = 0; index < 4; index++) {
             <p class="my-4">If you care for your time, I hands down would go with this."</p>
           </blockquote>
           <figcaption class="flex justify-center items-center space-x-3">
+            <!-- Change LCP Webp: Update image -->
             <AdvancedImage
               :cldImg="personImages[0]"
               class="w-9 h-9 rounded-full object-cover"
@@ -84,11 +85,12 @@ for (let index = 0; index < 4; index++) {
               provides a solid foundation for any project.
             </p>
             <p class="my-4">
-              Designing with Figma components that can be easily translated to the   utility classes of Tailwind
-              CSS is a huge timesaver!"
+              Designing with Figma components that can be easily translated to the utility classes
+              of Tailwind CSS is a huge timesaver!"
             </p>
           </blockquote>
           <figcaption class="flex justify-center items-center space-x-3">
+            <!-- Change LCP Webp: Update image -->
             <AdvancedImage
               :cldImg="personImages[1]"
               class="w-9 h-9 rounded-full object-cover"
@@ -120,11 +122,12 @@ for (let index = 0; index < 4; index++) {
               just using the toolkit).
             </p>
             <p class="my-4">
-              Aesthetically, the well designed components are beautiful and will   undoubtedly level up your
-              next application."
+              Aesthetically, the well designed components are beautiful and will undoubtedly level
+              up your next application."
             </p>
           </blockquote>
           <figcaption class="flex justify-center items-center space-x-3">
+            <!-- Change LCP Webp: Update image -->
             <AdvancedImage
               :cldImg="personImages[2]"
               class="w-9 h-9 rounded-full object-cover"
@@ -151,10 +154,11 @@ for (let index = 0; index < 4; index++) {
               the best things from 2 different worlds: Figma and Tailwind.
             </p>
             <p class="my-4">
-              You have many examples that can be used to create a fast prototype for   your team."
+              You have many examples that can be used to create a fast prototype for your team."
             </p>
           </blockquote>
           <figcaption class="flex justify-center items-center space-x-3">
+            <!-- Change LCP Webp: Update image -->
             <AdvancedImage
               :cldImg="personImages[3]"
               class="w-9 h-9 rounded-full object-cover"
