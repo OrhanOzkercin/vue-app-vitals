@@ -132,6 +132,7 @@
       </div>
 
       <div class="flex justify-center mt-10">
+        <!-- Change CLS: Only difference-->
         <img
           loading="lazy"
           class="object-cover rounded-xl h-48 sm:h-96"
