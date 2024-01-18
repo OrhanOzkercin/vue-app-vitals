@@ -7,7 +7,7 @@ const cld = new Cloudinary({
     cloudName: 'dsganvb42'
   }
 })
-const plugins = [responsive({ steps: [400, 600, 800] })]
+const plugins = [responsive({ steps: [400, 767, 1000, 1400] })]
 const heroImage = cld.image('hero').format('webp')
 </script>
 
