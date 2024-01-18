@@ -4,8 +4,8 @@
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
         <a href="" class="flex items-center">
           <img
-            src="https://res.cloudinary.com/startup-grind/image/upload/dpr_2.0,fl_sanitize/v1/gcs/platform-data-goog/contentbuilder/logo_dark_QmPdj9K.svg"
-            class="mr-3 w-80 h-6 sm:h-9"
+            src="https://cdn-images-1.medium.com/v2/resize:fit:720/1*ZSAear_QUcEvGEmjvRgn7Q@2x.png"
+            class="mr-3 w-6 sm:w-9 h-6 sm:h-9"
             alt="Flowbite Logo"
           />
         </a>
@@ -128,11 +128,15 @@
         >
           Start 14-Day free trial
         </button>
-        <p class="mt-3 text-sm text-gray-400 ">No credit card required</p>
+        <p class="mt-3 text-sm text-gray-400">No credit card required</p>
       </div>
 
       <div class="flex justify-center mt-10">
-        <img loading="lazy" class="object-cover rounded-xl max-h-96" src="../../assets/images/unoptimized/hero.jpeg" />
+        <img
+          loading="lazy"
+          class="object-cover rounded-xl max-h-96"
+          src="../../assets/images/unoptimized/hero.jpeg"
+        />
       </div>
     </div>
   </section>
