@@ -8,7 +8,7 @@ const cld = new Cloudinary({
   }
 })
 
-const plugins = [responsive({ steps: [400, 767, 1000, 1400] })]
+const plugins = [responsive({ steps: [400, 767, 1000, 1400] })] // Change LCP Responsive: Add responsive feature to images
 
 const hero2Image = cld.image('hero-2').format('webp')
 const hero3Image = cld.image('hero-3').format('webp')

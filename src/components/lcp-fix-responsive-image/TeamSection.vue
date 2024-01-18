@@ -7,7 +7,7 @@ const cld = new Cloudinary({
     cloudName: 'dsganvb42'
   }
 })
-const plugins = [responsive({ steps: [400, 767, 1000, 1400] })]
+const plugins = [responsive({ steps: [400, 767, 1000, 1400] })] // Change LCP Responsive: Add responsive feature to images
 const personImages = []
 for (let index = 0; index < 8; index++) {
   personImages.push(cld.image('person-' + (index + 1)).format('webp'))
