@@ -7,7 +7,7 @@ const cld = new Cloudinary({
     cloudName: 'dsganvb42'
   }
 })
-const plugins = [lazyload(), responsive({ steps: [400, 767, 1000, 1400] })]
+const plugins = [lazyload(), responsive({ steps: [400, 767, 1000, 1400] })] // Change LCP Lazyload: Add lazyload feature to images
 
 const personImages = []
 for (let index = 0; index < 8; index++) {
